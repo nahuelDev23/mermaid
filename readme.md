@@ -3,7 +3,8 @@
 title: Factory Pattern
 ---
 classDiagram
- 
+
+ note for Creator "var some Product = CreatePoduct()\n some.doStuff()"
  class Creator{
  +CreateProduct() Product
  }
