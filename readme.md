@@ -1,0 +1,5 @@
+```mermaid
+class Pato {
++color
+}
+```
