@@ -10,13 +10,24 @@ classDiagram
  }
  <<interface>> Product
  
- Creator --> Product : implements
+ Creator --> Product : use
  
  class ConcreteProductA 
  class ConcreteProductB 
  
- ConcreteProductA ..> Product
- ConcreteProductB ..> Product
+ ConcreteProductA ..> Product : impelement
+ ConcreteProductB ..> Product : impelement
+ 
+ class ConcreteCreatorA{
+ +CreateProduct()
+ }
+ 
+  class ConcreteCreatorB{
+ +CreateProduct()
+ }
+ 
+ ConcreteCreatorA --|> Creator
+ ConcreteCreatorB --|> Creator
 
  
 ```
