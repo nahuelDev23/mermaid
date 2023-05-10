@@ -5,7 +5,7 @@ classDiagram
   Creator : +createProduct():IProduct
   Creator --> IProduct
   ConcreteCreatorA : +factoryMethod():IProduct
-  ConcreteCreatoB : +factoryMethod():IProduct
+  ConcreteCreatorB : +factoryMethod():IProduct
   Creator : <<interface>>
   IProduct <|-- ConcreteProduct
   IProduct : +doSTuff()
