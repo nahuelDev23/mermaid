@@ -3,4 +3,5 @@ classDiagram
  
  class Creator{
  +CreateProduct()
+ }
 ```
