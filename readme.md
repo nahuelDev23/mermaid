@@ -9,8 +9,8 @@ classDiagram
   Creator : <<interface>>
   IProduct <|-- ConcreteProduct
   IProduct : +doSTuff()
-  ConcreteProducA : +doSTuff()
-  ConcreteProducB : +doSTuff()
+  ConcreteProductA : +doSTuff()
+  ConcreteProductB : +doSTuff()
   IProduct : <<interface>>
 
 ```
