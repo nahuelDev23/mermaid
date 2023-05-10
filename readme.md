@@ -15,8 +15,8 @@ classDiagram
  class ConcreteProductA 
  class ConcreteProductB 
  
- ConcreteProductA ..> Product : impelement
- ConcreteProductB ..> Product : impelement
+ ConcreteProductA ..|> Product : impelement
+ ConcreteProductB ..|> Product : impelement
  
  class ConcreteCreatorA{
  +CreateProduct()
