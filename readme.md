@@ -5,7 +5,7 @@ classDiagram
   Creator --> IProduct
   Creator <|-- ConcreteCreatorA
 
-  
+    ConcreteCreatorB
  
 
 ```
