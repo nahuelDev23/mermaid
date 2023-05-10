@@ -14,6 +14,9 @@ classDiagram
  
  class ConcreteProductA 
  class ConcreteProductB 
+ 
+ ConcreteProductA ..> Product
+ ConcreteProductB ..> Product
 
  
 ```
