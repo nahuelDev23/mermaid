@@ -12,8 +12,8 @@ classDiagram
  
  Creator --> Product : implements
  
- class ConcreteProductA {}
- class ConcreteProductB {}
+ class ConcreteProductA 
+ class ConcreteProductB 
 
  
 ```
