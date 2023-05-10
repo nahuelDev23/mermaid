@@ -8,9 +8,12 @@ classDiagram
   class Product{
   +doStuff()
  }
+ <<interface>> Product
  
  Creator --> Product : implements
  
+ class ConcreteProductA {}
+ class ConcreteProductB {}
 
- <<interface>> Product
+ 
 ```
