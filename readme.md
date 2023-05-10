@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
 
-class Pato {
+interface IImageUploader {
 +color
 }
 ```
