@@ -26,6 +26,7 @@ classDiagram
  +CreateProduct()
  }
  
+ note "return new ConcreteProductA()"
  ConcreteCreatorA --|> Creator :instance of
  ConcreteCreatorB --|> Creator :instance of
 
