@@ -1,13 +1,16 @@
 ```mermaid
 classDiagram
-  Creator <|-- ConcreteCreator
-  Creator : +factoryMethod()
+  Creator <|-- ConcreteCreatorA
+  Creator <|-- ConcreteCreatorB
+  Creator : +createProduct():IProduct
   Creator --> Product
-  ConcreteCreator : +factoryMethod()
+  ConcreteCreatorA : +factoryMethod():IProduct
+  ConcreteCreatoB : +factoryMethod():IProduct
   Creator : <<interface>>
-  Product <|-- ConcreteProduct
-  Product : +operation()
-  ConcreteProduct : +operation()
-  Product : <<interface>>
+  IProduct <|-- ConcreteProduct
+  IProduct : +doSTuff()
+  ConcreteProducA : +doSTuff()
+  ConcreteProducB : +doSTuff()
+  IProduct : <<interface>>
 
 ```
