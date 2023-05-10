@@ -26,8 +26,8 @@ classDiagram
  +CreateProduct()
  }
  
- ConcreteCreatorA --|> Creator
- ConcreteCreatorB --|> Creator
+ ConcreteCreatorA --|> Creator :instance of
+ ConcreteCreatorB --|> Creator :instance of
 
  
 ```
