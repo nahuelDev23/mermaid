@@ -2,7 +2,7 @@
 classDiagram
  
  class Creator{
- +CreateProduct() : Product
+ +CreateProduct() Product
  }
  
   class Product{
