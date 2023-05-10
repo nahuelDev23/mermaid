@@ -2,6 +2,7 @@
 classDiagram
   Creator <|-- ConcreteCreator
   Creator : +factoryMethod()
+  Creator --> Product
   ConcreteCreator : +factoryMethod()
   Creator : <<interface>>
   Product <|-- ConcreteProduct
