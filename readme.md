@@ -53,7 +53,7 @@ classDiagram
  note for ImageUploaderFactory "uploaderImageService, error := uploaderImage.CreateImageUploaderFactory(uploaderImage.CLOUDINARY)"
   note for ImageUploaderFactory "return new Cloudinary()"
  class ImageUploaderFactory{
- +CreateImageUploaderFactory(provider AllowedImageProvider) ImageUploader customError.CustomError
+ +CreateImageUploaderFactory(provider AllowedImageProvider) (ImageUploader, customError.CustomError)
  }
  
   class ImageUploader{
