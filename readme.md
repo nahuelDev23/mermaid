@@ -50,10 +50,10 @@ title: Simple Factory Pattern
 ---
 classDiagram
 
- note for ImageUploaderFactory "some := CreateImageUploaderFactory()\n some.UploadImage()"
+ note for ImageUploaderFactory "uploaderImageService, error := uploaderImage.CreateImageUploaderFactory(uploaderImage.CLOUDINARY)"
   note for ImageUploaderFactory "return new Cloudinary()"
  class ImageUploaderFactory{
- +CreateImageUploaderFactory(provider AllowedImageProvider) ImageUploader
+ +CreateImageUploaderFactory(provider AllowedImageProvider) ImageUploader customError.CustomError
  }
  
   class ImageUploader{
