@@ -80,3 +80,9 @@ classDiagram
  
  Cloudinary ..|> ImageUploader : impelement
  ```
+ 
+ En el diagrama de arriba `ImageUploaderFactory` puede recibir como parametro un string de tipo `AllowedImageProvider`:
+ ```go
+ type AllowedImageProvider string
+ var CLOUDINARY AllowedImageProvider = "cloudinary"
+ ```
