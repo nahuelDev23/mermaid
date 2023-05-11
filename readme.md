@@ -57,8 +57,17 @@ classDiagram
  }
  
   class ImageUploader{
-  +UploadImage(c *gin.Context,file *multipart.FileHeader, currentUserID string,currentURLImage string,customImage customImageService.CustomImage,folder string,) (string, customError.CustomError)
-  +DeleteImage()
+  +UploadImage(
+  c *gin.Context,
+  file *multipart.FileHeader,
+  currentUserID string,
+  currentURLImage string,
+  customImage customImageService.CustomImage,
+  folder string) (string, customError.CustomError)
+  +DeleteImage(
+  currentImageURL,
+		currentUserID,
+		folder string) (*uploader.DestroyResult, customError.CustomError)
  }
  <<interface>> ImageUploader
  
