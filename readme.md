@@ -40,3 +40,34 @@ classDiagram
 
  
 ```
+
+## Patron Factory para subir imagenes con imageUploader.go
+
+
+```mermaid
+---
+title: Factory Pattern
+---
+classDiagram
+
+ note for ImageUploaderFactory "some := CreateImageUploaderFactory()\n some.UploadImage()"
+  note for ImageUploaderFactory "return new Cloudinary()"
+ class ImageUploaderFactory{
+ +CreateImageUploaderFactory(provider AllowedImageProvider) ImageUploader
+ }
+ 
+  class ImageUploader{
+  +UploadImage()
+  +DeleteImage()
+ }
+ <<interface>> ImageUploader
+ 
+ ImageUploaderFactory --> ImageUploader : use
+ 
+ class Cloudinary{
+ +UploadImage()
+  +DeleteImage()
+ }  
+ 
+ Cloudinary ..|> ImageUploader : impelement
+ ```
