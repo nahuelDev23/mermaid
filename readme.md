@@ -46,7 +46,7 @@ classDiagram
 
 ```mermaid
 ---
-title: Factory Pattern
+title: Simple Factory Pattern
 ---
 classDiagram
 
